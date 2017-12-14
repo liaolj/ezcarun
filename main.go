@@ -8,21 +8,21 @@ import (
 
 func main() {
 	// d := ebridge.Edemo()
-	value, err := ebridge.LongGet("ll")
-	if err != nil {
-		fmt.Printf("[longin]-ll is %v\n", value)
+	value1, err1 := ebridge.LongGet("ll")
+	if err1 != nil {
+		fmt.Printf("[longin]-ll is %v\n", value1)
 	}
 
-	value, err := ebridge.StringGet("str")
-	if err != nil {
-		fmt.Printf("[stringin]-str is %v\n", value)
+	value2, err2 := ebridge.StringGet("str")
+	if err2 != nil {
+		fmt.Printf("[stringin]-str is %v\n", value2)
 	}
-	value, err := ebridge.DoubleGet("dd")
-	if err != nil {
-		fmt.Printf("[ai]-dd is %v\n", value)
+	value3, err3 := ebridge.DoubleGet("dd")
+	if err3 != nil {
+		fmt.Printf("[ai]-dd is %v\n", value3)
 	}
-	value, err := ebridge.BoolGet("bb")
-	if err != nil {
-		fmt.Printf("[bi]-bb is %v\n", value)
+	value4, err4 := ebridge.BoolGet("bb")
+	if err4 != nil {
+		fmt.Printf("[bi]-bb is %v\n", value4)
 	}
 }
