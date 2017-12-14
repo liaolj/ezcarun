@@ -8,5 +8,8 @@ import (
 
 func main() {
 	// d := ebridge.Edemo()
-	fmt.Printf(ebridge.Reverse("!oG ,olleH"))
+	value, err := ebridge.LongGet("epicsHost:ai1")
+	if err != nil {
+		fmt.Printf("result is %d\n", value)
+	}
 }
